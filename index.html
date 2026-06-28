@@ -66,18 +66,14 @@
       color: #555;
     }
 
-    .avatar {
+    .avatar-img {
       width: 170px;
       height: 170px;
       border-radius: 50%;
-      background: #f0f0f0;
-      color: #777;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      font-weight: 600;
+      object-fit: cover;
+      display: block;
       margin-bottom: 22px;
+      border: 1px solid #e5e5e5;
     }
 
     .sidebar h2 {
@@ -196,10 +192,9 @@
         margin-bottom: 40px;
       }
 
-      .avatar {
+      .avatar-img {
         width: 140px;
         height: 140px;
-        font-size: 2.4rem;
       }
 
       .date {
@@ -229,7 +224,7 @@
 
   <div class="container">
     <aside class="sidebar">
-      <div class="avatar">JL</div>
+      <img class="avatar-img" src="profile.jpg" alt="Jeongjin Lee">
 
 ```
   <h2>Jeongjin Lee</h2>
@@ -242,6 +237,7 @@
     <li>Columbus, OH</li>
     <li><a href="mailto:lee.10449@osu.edu">lee.10449@osu.edu</a></li>
     <li><a href="mailto:leejeongjin4754@gmail.com">leejeongjin4754@gmail.com</a></li>
+    <li><a href="https://scholar.google.com/citations?user=7eZZxwUAAAAJ&hl=en">Google Scholar</a></li>
     <li><a href="https://github.com/Jeongjin95">GitHub</a></li>
     <li><a href="cv.pdf">CV</a></li>
   </ul>
@@ -256,25 +252,26 @@
   </p>
 
   <p>
-    My research focuses on statistical methods for complex biomedical and
-    public health data, including survival analysis, causal inference,
-    dynamic treatment regimes, and infectious disease surveillance. I am
-    particularly interested in developing methods for estimation and
-    decision-making under censoring, missingness, and nonrandom observation
-    processes.
+    My research is centered on causal inference and infectious disease
+    modeling, with a focus on developing statistical methods for complex
+    biomedical and public health data. I am particularly interested in
+    estimation and decision-making under censoring, missingness, and
+    nonrandom observation processes.
   </p>
 
   <h2 id="research">Research Interests</h2>
 
-  <p>Some of my research interests include:</p>
+  <p>
+    Some of my research interests include:
+  </p>
 
   <ul>
-    <li>Survival analysis</li>
     <li>Causal inference</li>
+    <li>Infectious disease modeling and surveillance</li>
+    <li>Survival analysis</li>
     <li>Dynamic treatment regimes</li>
     <li>Reinforcement learning for biomedical decision-making</li>
-    <li>Infectious disease surveillance</li>
-    <li>Kalman filtering and smoothing for prevalence estimation</li>
+    <li>Missing data and complex observation processes</li>
   </ul>
 
   <h2 id="education">Education</h2>
