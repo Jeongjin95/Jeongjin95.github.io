@@ -10,13 +10,14 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      color: #333;
+      color: #3f464d;
       background: #ffffff;
       line-height: 1.6;
+      font-size: 17px;
     }
 
     a {
-      color: #2a7ae2;
+      color: #2aa3c7;
       text-decoration: none;
     }
 
@@ -25,113 +26,142 @@
     }
 
     .topnav {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 14px 40px;
+      height: 66px;
+      border-bottom: 1px solid #e8e8e8;
       background: #ffffff;
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
 
     .topnav-inner {
-      max-width: 1180px;
+      max-width: 1080px;
       margin: 0 auto;
+      height: 66px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      gap: 45px;
+      padding: 0 35px;
     }
 
     .site-title {
-      font-size: 1.1rem;
       font-weight: 700;
-      color: #222;
+      color: #6a737b;
+      font-size: 18px;
+      margin-right: 25px;
     }
 
-    .nav-links a {
-      margin-left: 22px;
-      color: #555;
-      font-size: 0.95rem;
+    .nav-link {
+      color: #6a737b;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+      font-family: inherit;
+    }
+
+    .nav-link:hover {
+      color: #222;
+      text-decoration: none;
     }
 
     .container {
-      max-width: 1180px;
+      max-width: 1080px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 50px;
-      padding: 45px 40px;
+      grid-template-columns: 220px 1fr;
+      gap: 42px;
+      padding: 38px 35px;
     }
 
     .sidebar {
-      color: #555;
+      color: #3f464d;
     }
 
     .avatar-img {
-      width: 170px;
-      height: 170px;
+      width: 165px;
+      height: 195px;
       border-radius: 50%;
       object-fit: cover;
       display: block;
-      margin-bottom: 22px;
-      border: 1px solid #e5e5e5;
+      margin-bottom: 14px;
+      border: 4px solid #f2f2f2;
+      box-shadow: 0 0 0 1px #e2e2e2;
     }
 
     .sidebar h2 {
-      font-size: 1.35rem;
-      color: #222;
-      margin: 0 0 5px 0;
+      font-size: 20px;
+      margin: 0 0 6px 0;
+      color: #3f464d;
     }
 
-    .sidebar .position {
-      margin: 0 0 20px 0;
-      color: #666;
-      font-size: 0.98rem;
+    .position {
+      font-size: 14px;
+      line-height: 1.45;
+      margin-bottom: 22px;
+      color: #3f464d;
     }
 
     .sidebar ul {
       list-style: none;
       padding: 0;
-      margin: 20px 0 0 0;
+      margin: 0;
+      font-size: 14px;
     }
 
     .sidebar li {
       margin-bottom: 10px;
-      font-size: 0.95rem;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 19px;
+      color: #111;
+      font-size: 14px;
     }
 
     main {
-      max-width: 820px;
+      max-width: 760px;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
     }
 
     h1 {
-      font-size: 2rem;
-      margin: 0 0 20px 0;
-      color: #222;
+      font-size: 31px;
+      margin: 0 0 8px 0;
+      color: #3f464d;
+      line-height: 1.25;
     }
 
     h2 {
-      font-size: 1.45rem;
-      margin-top: 44px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #e5e5e5;
-      color: #222;
+      font-size: 22px;
+      margin-top: 32px;
+      margin-bottom: 15px;
+      color: #3f464d;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 5px;
     }
 
     h3 {
-      font-size: 1.15rem;
-      margin-top: 30px;
-      color: #333;
+      font-size: 19px;
+      margin-top: 24px;
+      margin-bottom: 10px;
+      color: #3f464d;
     }
 
     h4 {
-      font-size: 1rem;
-      margin-top: 22px;
-      margin-bottom: 10px;
-      color: #444;
+      font-size: 17px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: #3f464d;
     }
 
     p {
-      margin: 0 0 16px 0;
+      margin: 0 0 20px 0;
     }
 
     ul, ol {
@@ -139,7 +169,7 @@
     }
 
     li {
-      margin-bottom: 13px;
+      margin-bottom: 12px;
     }
 
     .paper-title {
@@ -154,47 +184,58 @@
     .date {
       float: right;
       color: #777;
-      font-size: 0.95rem;
+      font-size: 15px;
+    }
+
+    .highlight-title {
+      font-weight: 700;
+      margin-top: 24px;
+      margin-bottom: 10px;
     }
 
     .footer {
-      margin-top: 55px;
-      padding-top: 18px;
-      border-top: 1px solid #e5e5e5;
+      margin-top: 45px;
+      padding-top: 16px;
+      border-top: 1px solid #e6e6e6;
+      font-size: 14px;
       color: #888;
-      font-size: 0.9rem;
     }
 
     @media (max-width: 850px) {
       .topnav {
-        padding: 14px 20px;
+        height: auto;
       }
 
       .topnav-inner {
+        height: auto;
         display: block;
+        padding: 16px 22px;
       }
 
-      .nav-links {
-        margin-top: 10px;
+      .site-title {
+        display: block;
+        margin-bottom: 10px;
       }
 
-      .nav-links a {
+      .nav-link {
+        margin-right: 18px;
+        margin-bottom: 8px;
         display: inline-block;
-        margin: 0 14px 6px 0;
+        font-size: 16px;
       }
 
       .container {
         display: block;
-        padding: 35px 22px;
+        padding: 32px 24px;
       }
 
       .sidebar {
-        margin-bottom: 40px;
+        margin-bottom: 38px;
       }
 
       .avatar-img {
-        width: 140px;
-        height: 140px;
+        width: 145px;
+        height: 170px;
       }
 
       .date {
@@ -210,16 +251,13 @@
 <body>
   <header class="topnav">
     <div class="topnav-inner">
-      <a class="site-title" href="#">Jeongjin Lee</a>
-      <nav class="nav-links">
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
-        <a href="#presentations">Presentations</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#service">Service</a>
-        <a href="https://ko.overleaf.com/read/pvjqhjhckmdx#1bbdb7" target="_blank" rel="noopener noreferrer">CV</a>
-      </nav>
+      <button class="nav-link site-title" onclick="showPage('home')">Jeongjin Lee</button>
+      <button class="nav-link" onclick="showPage('research')">Research</button>
+      <button class="nav-link" onclick="showPage('publications')">Publications</button>
+      <button class="nav-link" onclick="showPage('presentations')">Presentations</button>
+      <button class="nav-link" onclick="showPage('teaching')">Teaching</button>
+      <button class="nav-link" onclick="showPage('service')">Service</button>
+      <a class="nav-link" href="https://ko.overleaf.com/read/pvjqhjhckmdx#1bbdb7" target="_blank" rel="noopener noreferrer">CV</a>
     </div>
   </header>
 
@@ -229,240 +267,286 @@
 
 ```
   <h2>Jeongjin Lee</h2>
+
   <p class="position">
     Ph.D. Student in Biostatistics<br>
     The Ohio State University
   </p>
 
   <ul>
-    <li>Columbus, OH</li>
-    <li><a href="mailto:lee.10449@osu.edu">lee.10449@osu.edu</a></li>
-    <li><a href="mailto:leejeongjin4754@gmail.com">leejeongjin4754@gmail.com</a></li>
-    <li><a href="https://scholar.google.com/citations?user=7eZZxwUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-    <li><a href="https://github.com/Jeongjin95" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-    <li><a href="https://ko.overleaf.com/read/pvjqhjhckmdx#1bbdb7" target="_blank" rel="noopener noreferrer">CV</a></li>
+    <li><span class="icon">●</span> Columbus, OH</li>
+    <li><span class="icon">✉</span> <a href="mailto:lee.10449@osu.edu">Email</a></li>
+    <li><span class="icon">✉</span> <a href="mailto:leejeongjin4754@gmail.com">Personal Email</a></li>
+    <li><span class="icon">🎓</span> <a href="https://scholar.google.com/citations?user=7eZZxwUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+    <li><span class="icon">⌘</span> <a href="https://github.com/Jeongjin95" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><span class="icon">▣</span> <a href="https://ko.overleaf.com/read/pvjqhjhckmdx#1bbdb7" target="_blank" rel="noopener noreferrer">CV</a></li>
   </ul>
 </aside>
 
 <main>
-  <h1>Welcome!</h1>
+  <section id="home" class="page active">
+    <h1>Welcome!</h1>
 
-  <p>
-    I am a Ph.D. student in Biostatistics at The Ohio State University,
-    advised by <a href="https://schnellp.net/" target="_blank" rel="noopener noreferrer">Dr. Patrick M. Schnell</a>.
-  </p>
+    <p>
+      I am a Ph.D. student in Biostatistics at The Ohio State University,
+      advised by <a href="https://schnellp.net/" target="_blank" rel="noopener noreferrer">Dr. Patrick M. Schnell</a>.
+    </p>
 
-  <p>
-    My research centers on <strong>causal inference</strong> and
-    <strong>infectious disease modeling</strong>. I develop statistical
-    methods for complex biomedical and public health data, with particular
-    interest in estimation and decision-making under censoring, missingness,
-    time-varying treatment decisions, and nonrandom observation processes.
-  </p>
+    <p>
+      My research centers on <strong>causal inference</strong> and
+      <strong>infectious disease modeling</strong>. I develop statistical
+      methods for complex biomedical and public health data, with particular
+      interest in estimation and decision-making under censoring, missingness,
+      time-varying treatment decisions, and nonrandom observation processes.
+    </p>
 
-  <h2 id="research">Research Interests</h2>
+    <p class="highlight-title">Some of my research interests include:</p>
 
-  <p>
-    My main research interests include:
-  </p>
+    <ul>
+      <li><strong>Causal inference</strong></li>
+      <li><strong>Infectious disease modeling and surveillance</strong></li>
+      <li>Survival analysis</li>
+      <li>Dynamic treatment regimes</li>
+      <li>Reinforcement learning for biomedical decision-making</li>
+      <li>Missing data and complex observation processes</li>
+    </ul>
+  </section>
 
-  <ul>
-    <li><strong>Causal inference</strong></li>
-    <li><strong>Infectious disease modeling and surveillance</strong></li>
-    <li>Survival analysis</li>
-    <li>Dynamic treatment regimes</li>
-    <li>Reinforcement learning for biomedical decision-making</li>
-    <li>Missing data and complex observation processes</li>
-  </ul>
+  <section id="research" class="page">
+    <h1>Research</h1>
 
-  <h2 id="education">Education</h2>
+    <p>
+      My research focuses on developing statistical methods for causal inference,
+      infectious disease modeling, survival analysis, and individualized
+      decision-making in biomedical and public health studies.
+    </p>
 
-  <div class="education-item">
-    <strong>Ph.D. Student in Biostatistics</strong>
-    <span class="date">August 2022 &ndash; Present</span><br>
-    The Ohio State University, OH, USA<br>
-    Academic Advisor:
-    <a href="https://schnellp.net/" target="_blank" rel="noopener noreferrer">Patrick M. Schnell, PhD</a>
-  </div>
+    <h2>Current Research Themes</h2>
 
-  <div class="education-item">
-    <strong>Master in Statistics</strong>
-    <span class="date">March 2021 &ndash; August 2022</span><br>
-    Korea University, Seoul, South Korea<br>
-    Academic Advisor:
-    <a href="https://sites.google.com/view/sangbum" target="_blank" rel="noopener noreferrer">Sangbum Choi, PhD</a>
-  </div>
-
-  <div class="education-item">
-    <strong>Bachelor in Statistics</strong>
-    <span class="date">March 2015 &ndash; December 2020</span><br>
-    Korea University, Seoul, South Korea
     <ul>
       <li>
-        Completed military service as a Sergeant during undergraduate studies
-        (Republic of Korea Army, July 2016 &ndash; April 2018; honorably discharged).
+        <strong>Causal inference for infectious disease surveillance:</strong>
+        developing counterfactual frameworks for prevalence estimation under
+        nonrandom repeated testing, symptomatic testing, and contact tracing.
+      </li>
+
+      <li>
+        <strong>Infectious disease modeling:</strong>
+        studying statistical methods for disease transmission, prevalence
+        estimation, and surveillance data collected through complex observation
+        processes.
+      </li>
+
+      <li>
+        <strong>Dynamic treatment regimes and reinforcement learning:</strong>
+        developing Q-learning methods for censored time-to-event outcomes and
+        individualized treatment decision-making.
+      </li>
+
+      <li>
+        <strong>Survival analysis and censored data:</strong>
+        developing methods for high-dimensional, nonlinear, and incomplete
+        survival outcomes.
       </li>
     </ul>
-  </div>
 
-  <h2 id="publications">Publications</h2>
+    <h2>Education</h2>
 
-  <h3>Methodology</h3>
+    <div class="education-item">
+      <strong>Ph.D. Student in Biostatistics</strong>
+      <span class="date">August 2022 &ndash; Present</span><br>
+      The Ohio State University, OH, USA<br>
+      Academic Advisor:
+      <a href="https://schnellp.net/" target="_blank" rel="noopener noreferrer">Patrick M. Schnell, PhD</a>
+    </div>
 
-  <h4>Accepted / Published</h4>
+    <div class="education-item">
+      <strong>Master in Statistics</strong>
+      <span class="date">March 2021 &ndash; August 2022</span><br>
+      Korea University, Seoul, South Korea<br>
+      Academic Advisor:
+      <a href="https://sites.google.com/view/sangbum" target="_blank" rel="noopener noreferrer">Sangbum Choi, PhD</a>
+    </div>
 
-  <ol>
-    <li>
-      <strong>Lee, J.</strong>, Yang, J., Rempala, G. A., Schnell, P. M.
-      <span class="paper-title">A Counterfactual Framework for Estimating
-      Infectious Disease Prevalence under Repeated Testing with Symptomatic
-      and Contact-Tracing Components.</span>
-      <em>Annals of Applied Statistics</em>, accepted.
-    </li>
+    <div class="education-item">
+      <strong>Bachelor in Statistics</strong>
+      <span class="date">March 2015 &ndash; December 2020</span><br>
+      Korea University, Seoul, South Korea
+      <ul>
+        <li>
+          Completed military service as a Sergeant during undergraduate studies
+          (Republic of Korea Army, July 2016 &ndash; April 2018; honorably discharged).
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <li>
-      <strong>Lee, J.</strong>, Kim, J.-M. (2026).
-      <a href="https://doi.org/10.1093/jrsssc/qlag013" target="_blank" rel="noopener noreferrer">
-        Counterfactual Survival Q-learning via Buckley&ndash;James Boosting
-        with Applications to ACTG 175 and CALGB 8923
-      </a>.
-      <em>Journal of the Royal Statistical Society: Series C (Applied Statistics)</em>,
-      qlag013.
-    </li>
+  <section id="publications" class="page">
+    <h1>Publications</h1>
 
-    <li>
-      <strong>Lee, J.</strong>, Kim, J.-M. (2026).
-      <a href="https://doi.org/10.1007/s10985-026-09707-z" target="_blank" rel="noopener noreferrer">
-        Q-learning via Deep Learning-Based Buckley&ndash;James Method for
-        Non-Linear Censored Data
-      </a>.
-      <em>Lifetime Data Analysis</em>, 32, 27.
-    </li>
+    <h2>Methodology</h2>
 
-    <li>
-      <strong>Lee, J.</strong>, Kim, J.-M. (2025).
-      <a href="https://doi.org/10.1093/jrsssa/qnaf123" target="_blank" rel="noopener noreferrer">
-        Counterfactual Q-Learning via the Linear Buckley&ndash;James Method
-        for Longitudinal Survival Data
-      </a>.
-      <em>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em>,
-      qnaf123.
-    </li>
+    <h3>Accepted / Published</h3>
 
-    <li>
-      <strong>Lee, J.</strong>, Choi, T., Choi, S. (2024).
-      <a href="https://doi.org/10.1007/s00180-023-01446-1" target="_blank" rel="noopener noreferrer">
-        Censored Broken Adaptive Ridge Regression in High-Dimension
-      </a>.
-      <em>Computational Statistics</em>, 39(6), 3457&ndash;3482.
-    </li>
-  </ol>
+    <ol>
+      <li>
+        <strong>Lee, J.</strong>, Yang, J., Rempala, G. A., Schnell, P. M.
+        <span class="paper-title">A Counterfactual Framework for Estimating
+        Infectious Disease Prevalence under Repeated Testing with Symptomatic
+        and Contact-Tracing Components.</span>
+        <em>Annals of Applied Statistics</em>, accepted.
+      </li>
 
-  <h4>Manuscripts under Review</h4>
+      <li>
+        <strong>Lee, J.</strong>, Kim, J.-M. (2026).
+        <a href="https://doi.org/10.1093/jrsssc/qlag013" target="_blank" rel="noopener noreferrer">
+          Counterfactual Survival Q-learning via Buckley&ndash;James Boosting
+          with Applications to ACTG 175 and CALGB 8923
+        </a>.
+        <em>Journal of the Royal Statistical Society: Series C (Applied Statistics)</em>,
+        qlag013.
+      </li>
 
-  <ol>
-    <li>
-      <strong>Lee, J.</strong>, Kim, J.-M.
-      <span class="paper-title">Copula-Based Counterfactual Q-Learning for
-      Censored Time-to-Event Data.</span>
-      Under review.
-    </li>
-  </ol>
+      <li>
+        <strong>Lee, J.</strong>, Kim, J.-M. (2026).
+        <a href="https://doi.org/10.1007/s10985-026-09707-z" target="_blank" rel="noopener noreferrer">
+          Q-learning via Deep Learning-Based Buckley&ndash;James Method for
+          Non-Linear Censored Data
+        </a>.
+        <em>Lifetime Data Analysis</em>, 32, 27.
+      </li>
 
-  <h4>Working Papers</h4>
+      <li>
+        <strong>Lee, J.</strong>, Kim, J.-M. (2025).
+        <a href="https://doi.org/10.1093/jrsssa/qnaf123" target="_blank" rel="noopener noreferrer">
+          Counterfactual Q-Learning via the Linear Buckley&ndash;James Method
+          for Longitudinal Survival Data
+        </a>.
+        <em>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em>,
+        qnaf123.
+      </li>
 
-  <ol>
-    <li>
-      <strong>Lee, J.</strong>, Rempala, G. A., Schnell, P. M.
-      <span class="paper-title">Kalman Filtering and Smoothing for Improving
-      Precision in Horvitz&ndash;Thompson Estimation of Infectious Disease
-      Prevalence.</span>
-      Working paper.
-    </li>
-  </ol>
+      <li>
+        <strong>Lee, J.</strong>, Choi, T., Choi, S. (2024).
+        <a href="https://doi.org/10.1007/s00180-023-01446-1" target="_blank" rel="noopener noreferrer">
+          Censored Broken Adaptive Ridge Regression in High-Dimension
+        </a>.
+        <em>Computational Statistics</em>, 39(6), 3457&ndash;3482.
+      </li>
+    </ol>
 
-  <h3>Application</h3>
+    <h3>Manuscripts under Review</h3>
 
-  <ol>
-    <li>
-      Jang, H., Cline, M., <strong>Lee, J.</strong>, Reilly, M., Cho, H. (2026).
-      <a href="https://doi.org/10.1007/s10439-026-04012-0" target="_blank" rel="noopener noreferrer">
-        Regional Differences in Young's Modulus of the Porcine Lens Capsule
-      </a>.
-      <em>Annals of Biomedical Engineering</em>.
-    </li>
-  </ol>
+    <ol>
+      <li>
+        <strong>Lee, J.</strong>, Kim, J.-M.
+        <span class="paper-title">Copula-Based Counterfactual Q-Learning for
+        Censored Time-to-Event Data.</span>
+        Under review.
+      </li>
+    </ol>
 
-  <h2 id="presentations">Presentations</h2>
+    <h3>Working Papers</h3>
 
-  <ol>
-    <li>
-      <strong>Lee, J.</strong>, Schnell, P. M., Rempala, G. A., Kenah, E. (2026).
-      <span class="paper-title">Variable Selection for Infectious Disease
-      Transmission via Penalized Pairwise Accelerated Failure Time Models.</span>
-      The OSU Health and Environment Learning and Modeling (HELM).
-    </li>
+    <ol>
+      <li>
+        <strong>Lee, J.</strong>, Rempala, G. A., Schnell, P. M.
+        <span class="paper-title">Kalman Filtering and Smoothing for Improving
+        Precision in Horvitz&ndash;Thompson Estimation of Infectious Disease
+        Prevalence.</span>
+        Working paper.
+      </li>
+    </ol>
 
-    <li>
-      <strong>Lee, J.</strong>, Yang, J., Rempala, G. A., Schnell, P. M. (2025).
-      <span class="paper-title">A Counterfactual Framework for Estimating
-      Infectious Disease Prevalence under Repeated Testing with Symptomatic
-      and Contact-Tracing Components.</span>
-      The OSU Health and Environment Learning and Modeling (HELM).
-    </li>
+    <h2>Application</h2>
 
-    <li>
-      <strong>Lee, J.</strong>, Choi, T., Choi, S. (2021).
-      <span class="paper-title">Censored Broken Adaptive Ridge Regression
-      in High-Dimension.</span>
-      Joint Statistical Meetings.
-    </li>
-  </ol>
+    <ol>
+      <li>
+        Jang, H., Cline, M., <strong>Lee, J.</strong>, Reilly, M., Cho, H. (2026).
+        <a href="https://doi.org/10.1007/s10439-026-04012-0" target="_blank" rel="noopener noreferrer">
+          Regional Differences in Young's Modulus of the Porcine Lens Capsule
+        </a>.
+        <em>Annals of Biomedical Engineering</em>.
+      </li>
+    </ol>
+  </section>
 
-  <h2 id="teaching">Teaching Experience</h2>
+  <section id="presentations" class="page">
+    <h1>Presentations</h1>
 
-  <div class="teaching-item">
-    <strong>Instructor</strong>
-    <span class="date">Summer 2026</span><br>
-    The Ohio State University
-    <ul>
-      <li>PUBHBIO 2210: Biostatistics for Public Health Research</li>
-    </ul>
-  </div>
+    <ol>
+      <li>
+        <strong>Lee, J.</strong>, Schnell, P. M., Rempala, G. A., Kenah, E. (2026).
+        <span class="paper-title">Variable Selection for Infectious Disease
+        Transmission via Penalized Pairwise Accelerated Failure Time Models.</span>
+        The OSU Health and Environment Learning and Modeling (HELM).
+      </li>
 
-  <div class="teaching-item">
-    <strong>Teaching Assistant</strong>
-    <span class="date">Fall 2022 &ndash; Present</span><br>
-    The Ohio State University
-    <ul>
-      <li>STAT 1430: Statistics for the Business Sciences</li>
-      <li>STAT 3201: Introduction to Probability for Data Analytics</li>
-      <li>STAT 3450: Basic Statistics for Engineers</li>
-      <li>STAT 4302: Computational Statistics</li>
-      <li>PUBHBIO 7230: Longitudinal Data Analysis</li>
-      <li>PUBHBIO 7235: Applied Survival Analysis</li>
-      <li>PUBHBIO 7240: Applied Statistical Analysis with Missing Data</li>
-      <li>PUBHBIO 7255: Introduction to Causal Inference in Health Science Research</li>
-    </ul>
-  </div>
+      <li>
+        <strong>Lee, J.</strong>, Yang, J., Rempala, G. A., Schnell, P. M. (2025).
+        <span class="paper-title">A Counterfactual Framework for Estimating
+        Infectious Disease Prevalence under Repeated Testing with Symptomatic
+        and Contact-Tracing Components.</span>
+        The OSU Health and Environment Learning and Modeling (HELM).
+      </li>
 
-  <div class="teaching-item">
-    <strong>Teaching Assistant</strong>
-    <span class="date">Spring 2021 &ndash; Spring 2022</span><br>
-    Korea University
-    <ul>
-      <li>STAT 221: Introduction to Probability Theory</li>
-    </ul>
-  </div>
+      <li>
+        <strong>Lee, J.</strong>, Choi, T., Choi, S. (2021).
+        <span class="paper-title">Censored Broken Adaptive Ridge Regression
+        in High-Dimension.</span>
+        Joint Statistical Meetings.
+      </li>
+    </ol>
+  </section>
 
-  <h2 id="service">Professional Service</h2>
+  <section id="teaching" class="page">
+    <h1>Teaching</h1>
 
-  <p>
-    Reviewer:
-    <em>Statistics in Medicine</em> (2),
-    <em>Journal of the Royal Statistical Society: Series A</em> (2),
-    <em>Statistical Analysis and Data Mining</em> (1).
-  </p>
+    <div class="teaching-item">
+      <strong>Instructor</strong>
+      <span class="date">Summer 2026</span><br>
+      The Ohio State University
+      <ul>
+        <li>PUBHBIO 2210: Biostatistics for Public Health Research</li>
+      </ul>
+    </div>
+
+    <div class="teaching-item">
+      <strong>Teaching Assistant</strong>
+      <span class="date">Fall 2022 &ndash; Present</span><br>
+      The Ohio State University
+      <ul>
+        <li>STAT 1430: Statistics for the Business Sciences</li>
+        <li>STAT 3201: Introduction to Probability for Data Analytics</li>
+        <li>STAT 3450: Basic Statistics for Engineers</li>
+        <li>STAT 4302: Computational Statistics</li>
+        <li>PUBHBIO 7230: Longitudinal Data Analysis</li>
+        <li>PUBHBIO 7235: Applied Survival Analysis</li>
+        <li>PUBHBIO 7240: Applied Statistical Analysis with Missing Data</li>
+        <li>PUBHBIO 7255: Introduction to Causal Inference in Health Science Research</li>
+      </ul>
+    </div>
+
+    <div class="teaching-item">
+      <strong>Teaching Assistant</strong>
+      <span class="date">Spring 2021 &ndash; Spring 2022</span><br>
+      Korea University
+      <ul>
+        <li>STAT 221: Introduction to Probability Theory</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="service" class="page">
+    <h1>Professional Service</h1>
+
+    <p>
+      Reviewer:
+      <em>Statistics in Medicine</em> (2),
+      <em>Journal of the Royal Statistical Society: Series A</em> (2),
+      <em>Statistical Analysis and Data Mining</em> (1).
+    </p>
+  </section>
 
   <div class="footer">
     Last updated: June 2026
@@ -471,5 +555,20 @@
 ```
 
   </div>
+
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+
+      const selectedPage = document.getElementById(pageId);
+      if (selectedPage) {
+        selectedPage.classList.add('active');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
 </body>
 </html>
